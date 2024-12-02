@@ -76,19 +76,20 @@ const styles = StyleSheet.create({
   storiesContainer: {
     marginTop: 10,
     paddingHorizontal: 5,
+    marginBottom: 4,
   },
   storyContainer: {
-    width: 60,
-    height: 60,
+    width: 80,
+    height: 80,
     borderWidth: 2,
-    borderRadius: 30, // Fully rounded
+    borderRadius: 40, // Fully rounded
     marginHorizontal: 5,
     justifyContent: 'center',
     alignItems: 'center',
   },
   storyImage: {
-    width: 50,
-    height: 50,
-    borderRadius: 25, // Fully rounded
+    width: 70,
+    height: 70,
+    borderRadius: 35, // Fully rounded
   },
 });
