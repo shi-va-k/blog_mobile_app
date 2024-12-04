@@ -1,5 +1,5 @@
 // This file is a fallback for using MaterialIcons on Android and web.
-
+ 
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { SymbolWeight } from 'expo-symbols';
 import React from 'react';
@@ -10,9 +10,11 @@ const MAPPING = {
   // See MaterialIcons here: https://icons.expo.fyi
   // See SF Symbols in the SF Symbols app on Mac.
   'house.fill': 'home',
-  'paperplane.fill': 'send',
-  'chevron.left.forwardslash.chevron.right': 'code',
-  'chevron.right': 'chevron-right',
+  'person-outline.fill': 'person',
+  'play-circle-outline.fill': 'reel',
+  'plus.fill': 'add',
+  'search.fill': 'search',
+
 } as Partial<
   Record<
     import('expo-symbols').SymbolViewProps['name'],
@@ -39,5 +41,5 @@ export function IconSymbol({
   style?: StyleProp<ViewStyle>;
   weight?: SymbolWeight;
 }) {
-  return <MaterialIcons color={color} size={size} name={MAPPING[name]} style={style} />;
-}
+  return <MaterialIcons color={color} size={size} name={MAPPING[name]} style={style} />;
+ }
