@@ -33,15 +33,17 @@
 //   plugins: [],
 // }
 
-/** @type {import('tailwindcss').Config} */
-// module.exports = {
-//   content: [
-//     "./App.{js,jsx,ts,tsx}", // Ensure it scans your App files
-//     "./src/**/*.{js,jsx,ts,tsx}", // Include your component directory
-//   ],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-//   presets: [require("nativewind/preset")], // Add nativewind preset
-// };
+// tailwind.config.js
+ 
+ /** @type {import('tailwindcss').Config} */
+ module.exports = {
+   content: [
+     "./app/**/*.{js,jsx,ts,tsx}", // Ensure it scans your App files
+     "./components/**/*.{js,jsx,ts,tsx}", // Include your component directory
+   ],
+   theme: {
+     extend: {},
+   },
+   plugins: [],
+   presets: [require("nativewind/preset")], // Add nativewind preset
+ };
